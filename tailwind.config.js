@@ -11,7 +11,9 @@ module.exports = {
             'primary-bg-color': '#FFF3E3',
             'footer-dark-bg-color': '#FAF3EA',
             'footer-dark-title-text': '#242424',
-            'footer-dark-ph-text': '#898989'
+            'footer-dark-ph-text': '#898989',
+            'footer-border-color': '#D9D9D9',
+            'footer-ph-text': '#9F9F9F',
         },
         fontFamily: {
             sans: ['Poppins', 'sans-serif'],
