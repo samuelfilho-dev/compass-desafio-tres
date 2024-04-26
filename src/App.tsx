@@ -1,5 +1,6 @@
 import React from 'react';
-import Home from "./Home";
+import Home from "./routes/Home";
+import Shop from "./routes/Shop";
 
 function App() {
     return (
