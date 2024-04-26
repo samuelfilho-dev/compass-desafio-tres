@@ -11,7 +11,7 @@ module.exports = {
             'primary-bg-color': '#FFF3E3',
         },
         fontFamily: {
-            sans: ['Montserrat', 'Poppins', 'sans-serif'],
+            sans: ['Poppins', 'sans-serif'],
         }
     },
     plugins: [],
