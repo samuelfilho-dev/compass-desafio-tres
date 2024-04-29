@@ -19,7 +19,8 @@ module.exports = {
             'product-color-name': '#3A3A3A',
             'product-color-description': '#898989',
             'product-rebate-price': '#B0B0B0',
-            'product-btn-color': '#B88E2F'
+            'product-btn-color': '#B88E2F',
+            'filter-bar-color': '#F9F1E7'
         },
         fontFamily: {
             sans: ['Poppins', 'sans-serif'],

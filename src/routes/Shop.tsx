@@ -2,15 +2,19 @@ import React from "react";
 import Header from "../components/header/Header";
 import DarkFooter from "../components/dark-footer/DarkFooter";
 import Footer from "../components/footer/Footer";
-import ProductCard from "../components/product/ProductCard";
+import ShopBanner from "../components/shop-banner/ShopBanner";
+import FilterBar from "../components/filter-bar/FilterBar";
+import ShopProducts from "../components/shop-products/ShopProducts";
 
 function Shop() {
     return (
         <div>
-            <Header />
-            <ProductCard />
-            <DarkFooter />
-            <Footer />
+            <Header/>
+            <ShopBanner/>
+            <FilterBar/>
+            <ShopProducts />
+            <DarkFooter/>
+            <Footer/>
         </div>
     );
 }

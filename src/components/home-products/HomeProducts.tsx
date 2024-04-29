@@ -6,14 +6,14 @@ import {useNavigate} from "react-router-dom";
 
 function HomeProducts() {
 
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
     const negative = useNavigate();
 
     useEffect(() => {
         async function fetchProducts() {
             const response = await axios.get("http://localhost:8080/product");
             const data: Product[] = await response.data;
-            setProducts(data as any);
+            setProducts(data);
         }
 
         fetchProducts();
