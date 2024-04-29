@@ -1,8 +1,8 @@
 import React from "react";
-import product from "../../assets/product.png";
+import {ProductCard} from "./ProductCard";
 
-function ProductImg() {
-    return <img src={product} alt="Product"/>
+function ProductImg(props: ProductCard) {
+    return <img src={props.img} alt="Product"/>
 }
 
 export default ProductImg;
