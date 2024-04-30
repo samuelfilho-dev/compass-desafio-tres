@@ -8,13 +8,15 @@ import Home from "./routes/Home";
 import Shop from "./routes/Shop";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import ProductSinglePage from "./routes/ProductSinglePage";
 
 
 const router = createBrowserRouter([
     {path: '/', element: <Home/>},
     {path: 'shop', element: <Shop/>},
     {path: 'about', element: <About/>},
-    {path: 'contact', element: <Contact/>}
+    {path: 'contact', element: <Contact/>},
+    {path: 'product/:id', element: <ProductSinglePage />}
 ])
 
 const root = ReactDOM.createRoot(
