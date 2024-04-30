@@ -25,7 +25,7 @@ function ProductCard(props: ProductCard) {
                     <ProductInfo name={props.name} description={props.description} price={props.price}
                                  rebatePrice={props.rebatePrice}/>
                 </section>
-                <OverlayProduct/>
+                <OverlayProduct id={props.id}/>
             </section>
         </>
     );

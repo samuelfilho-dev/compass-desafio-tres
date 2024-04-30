@@ -5,8 +5,11 @@ import compare from "../../assets/icons/compare.svg";
 import heart from "../../assets/icons/product-heart.svg";
 import OverlayButton from "./OverlayButton";
 
+interface OverlayProductProps {
+    id?: string
+}
 
-function OverlayProduct() {
+function OverlayProduct(props: OverlayProductProps) {
     return (
         <>
             <section className="absolute">
@@ -14,7 +17,7 @@ function OverlayProduct() {
                left-0 top-[-100%] hover:opacity-100 group-hover:top-0 p-4 z-10">
                     <section className="w-[252px] h-[96px]">
                         <section className="w-[252px] h-[24px] flex justify-center items-center mb-[30px]">
-                            <OverlayButton/>
+                            <OverlayButton id={props.id}/>
                         </section>
                         <section className="w-[252px] h-[24px] flex justify-center items-center gap-[20px]">
                             <OverlayOptions icon={share} title="Share"/>
