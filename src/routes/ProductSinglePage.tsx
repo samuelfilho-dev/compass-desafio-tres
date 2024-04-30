@@ -9,7 +9,6 @@ function ProductSinglePage() {
     return (
         <>
             <Header/>
-            <DarkHeader />
             <SingleProductInfo />
             <FooterDivBar />
             <Footer/>

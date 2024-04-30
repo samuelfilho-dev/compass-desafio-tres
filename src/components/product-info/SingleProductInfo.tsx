@@ -7,6 +7,7 @@ import SinglePagesProducts from "../single-page-products/SinglePagesProducts";
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import {Product} from "../../types/product";
+import DarkHeader from "../dark-header/DarkHeader";
 
 function SingleProductInfo() {
     const [product, setProduct] = useState<Product>({} as Product);
@@ -25,6 +26,7 @@ function SingleProductInfo() {
 
     return (
         <>
+            <DarkHeader  productName={product.name}/>
             <section className="w-full h-[820px] mt-[50px]">
                 <section className="w-[1440px] h-[820px] flex gap-[90px]">
                     <SingleProductImg img={product.imageLink}/>
